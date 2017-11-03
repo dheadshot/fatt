@@ -11,7 +11,7 @@
  * TIME_ZONE_INFORMATION: https://msdn.microsoft.com/en-us/library/windows/desktop/ms725481(v=vs.85).aspx
 */
 
-#define PROGVERSION "1.00.0001"
+#define PROGVERSION "1.00.0002"
 
 #ifndef FILE_ATTRIBUTE_INTEGRITY_STREAM
 #define FILE_ATTRIBUTE_INTEGRITY_STREAM 0x8000
@@ -210,7 +210,7 @@ int main(int argc, char *argv[])
         int tzdst;
         if (argc != 2)
         {
-                printf("DHSC FAtt %s\nLists file attributes.",PROGVERSION);
+                printf("DHSC FAtt %s\nLists file attributes.\n",PROGVERSION);
                 printf("Usage:\n  %s <File>\n", argv[0]);
                 return 0;
         }
